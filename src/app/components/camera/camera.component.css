@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  display: flex;
+}
+
+app-sidebar {
+  width: 20%;
+}
+
+.camera-container {
+  height: 100vh;
+  width: 80%;
+  background: #f6f7f8;
+  display: flex;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.camera-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.camera-item {
+  max-width: 25%;
+  height: fit-content;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: -5px 5px 10px #666666, 7px -7px 14px #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 25px;
+  transition-duration: 0.7s;
+  transition-property: transform;
+}
+
+.camera-item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.green {
+  background: #3abc3a;
+}
+
+.red {
+  background: red;
+}
+
+img {
+  width: 100%;
+}

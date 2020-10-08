@@ -1,0 +1,11 @@
+<div class="container">
+  <app-sidebar></app-sidebar>
+  <div class="camera-container">
+    <div class="camera-block">
+      <div *ngFor="let item of cameraData; let i = index" class="camera-item">
+        <img [src]="item.placeholder" alt="">
+        <div [ngClass]="[item.indicator ? 'green' : 'red']" class="indicator"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+
+.sidebar-container {
+  height: 100vh;
+  box-shadow: 1px 0px 9px black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.sidebar-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 90%;
+}
+
+.sidebar-title h3 {
+  font-family: "Watford-Regular", serif;
+  text-align: center;
+}
+
+.sidebar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.sidebar-nav {
+  font-family: "Ruberoid", sans-serif;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.sidebar-nav a {
+  color: #0e0d0d;
+  text-decoration: none;
+}
