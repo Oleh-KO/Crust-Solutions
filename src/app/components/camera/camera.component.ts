@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import { CameraService } from '../../services/camera.service';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-camera',
@@ -7,31 +8,36 @@ import { CameraService } from '../../services/camera.service';
   styleUrls: ['./camera.component.css']
 })
 
-export class CameraComponent implements OnInit {
+export class CameraComponent implements OnInit, OnDestroy {
   camerasArray = [];
   data;
   cameraData;
+  subs = new Subscription();
 
   constructor(
     private cameraService: CameraService,
   ) {}
 
   ngOnInit(): void {
-    this.cameraService.getData(this.camerasArray).subscribe(response => {
+    const subscription = this.cameraService.getData(this.camerasArray).subscribe(response => {
       this.data = response;
       this.data[0].cameras.map(item => item.indicator = Math.random() >= 0.5);
-      this.shuffleArray(this.data);
       this.cameraData = this.data[0].cameras;
-      console.log('RES', this.data);
+      this.shuffleArray(this.cameraData);
     });
+    this.subs.add(subscription);
   }
 
-  shuffleArray(a): any {
-    for (let i = a.length - 1; i > 0; i--) {
+  ngOnDestroy(): void {
+    this.subs.unsubscribe();
+  }
+
+  shuffleArray(array): any {
+    for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
+      [array[i], array[j]] = [array[j], array[i]];
     }
-    return a;
+    return array;
   }
 
 }
