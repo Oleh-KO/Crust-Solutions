@@ -1,29 +1,36 @@
 {
   "data": [
     {
-      "id": "26030644",
-      "placeholder": "assets/images/img1.jpg",
-      "indicator": "true"
-    },
-    {
-      "id": "26030656",
-      "placeholder": "assets/images/img2.jpg",
-      "indicator": "false"
-    },
-    {
-      "id": "26030662",
-      "placeholder": "assets/images/img3.jpg",
-      "indicator": "true"
-    },
-    {
-      "id": "26030673",
-      "placeholder": "assets/images/img4.jpg",
-      "indicator": "false"
-    },
-    {
-      "id": "26030685",
-      "placeholder": "assets/images/img5.jpg",
-      "indicator": "true"
+      "cameras": [
+        {
+          "id": "26030644",
+          "placeholder": "assets/images/img1.jpg",
+          "indicator": "true"
+        },
+        {
+          "id": "26030656",
+          "placeholder": "assets/images/img2.jpg",
+          "indicator": "false"
+        },
+        {
+          "id": "26030662",
+          "placeholder": "assets/images/img3.jpg",
+          "indicator": "true"
+        },
+        {
+          "id": "26030673",
+          "placeholder": "assets/images/img4.jpg",
+          "indicator": "false"
+        },
+        {
+          "id": "26030685",
+          "placeholder": "assets/images/img5.jpg",
+          "indicator": "true"
+        }
+      ],
+      "count": {
+        "camera_count": "5"
+      }
     }
   ]
 }
