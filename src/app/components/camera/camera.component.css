@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  height: 100vh;
   display: flex;
 }
 
@@ -13,7 +14,7 @@ app-hamburger {
 
 .camera-container {
   width: 80%;
-  height: fit-content;
+  height: 100vh;
   background: #f6f7f8;
   display: flex;
   align-items: flex-start;
@@ -79,14 +80,13 @@ img {
 
   .camera-container {
     width: 100%;
+    height: fit-content;
   }
 
   .camera-block {
     justify-content: center;
   }
-}
 
-@media screen and (max-width: 600px) {
   .camera-item {
     max-width: 50%;
   }
