@@ -1,6 +1,6 @@
 
 .sidebar-container {
-  height: 100vh;
+  height: 100%;
   box-shadow: 1px 0px 9px black;
   display: flex;
   justify-content: flex-start;
@@ -50,3 +50,6 @@
   color: #0e0d0d;
   text-decoration: none;
 }
+
+
+

@@ -8,8 +8,9 @@ import { CameraComponent } from './components/camera/camera.component';
 import { ReportingComponent } from './components/reporting/reporting.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { AppRoutingModule } from './app-routing.module';
-import {RouterModule, Routes} from '@angular/router';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { HamburgerComponent } from './components/hamburger/hamburger.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
     SidebarComponent,
     CameraComponent,
     ReportingComponent,
-    SettingsComponent
+    SettingsComponent,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule,

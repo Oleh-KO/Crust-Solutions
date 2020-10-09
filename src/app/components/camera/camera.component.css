@@ -7,11 +7,16 @@ app-sidebar {
   width: 20%;
 }
 
+app-hamburger {
+  display: none;
+}
+
 .camera-container {
-  height: 100vh;
   width: 80%;
+  height: fit-content;
   background: #f6f7f8;
   display: flex;
+  align-items: flex-start;
   justify-items: center;
   padding: 2rem;
 }
@@ -19,6 +24,7 @@ app-sidebar {
 .camera-block {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
 }
@@ -60,4 +66,40 @@ app-sidebar {
 
 img {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  app-sidebar {
+    display: none;
+  }
+
+  app-hamburger {
+    display: block;
+  }
+
+  .camera-container {
+    width: 100%;
+  }
+
+  .camera-block {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .camera-item {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .camera-item {
+    max-width: 55%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .camera-item {
+    max-width: 60%;
+  }
 }

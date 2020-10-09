@@ -7,6 +7,10 @@ app-sidebar {
   width: 20%;
 }
 
+app-hamburger {
+  display: none;
+}
+
 .home-container {
   height: 100vh;
   width: 80%;
@@ -18,4 +22,19 @@ app-sidebar {
 img {
   width: 50%;
   margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  app-sidebar {
+    display: none;
+  }
+
+  app-hamburger {
+    display: block;
+  }
+
+  .home-container {
+    width: 100%;
+  }
+
 }

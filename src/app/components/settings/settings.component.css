@@ -7,6 +7,10 @@ app-sidebar {
   width: 20%;
 }
 
+app-hamburger {
+  display: none;
+}
+
 .settings-container {
   height: 100vh;
   width: 80%;
@@ -20,4 +24,19 @@ app-sidebar {
   text-align: center;
   font-family: fantasy;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  app-sidebar {
+    display: none;
+  }
+
+  app-hamburger {
+    display: block;
+  }
+
+  .settings-container {
+    width: 100%;
+  }
+
 }
